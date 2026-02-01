@@ -33,12 +33,12 @@ The project demonstrates clean architecture, proper validation, and clear API do
 
 ### Orders
 
-| Method | Endpoint | Description |
-|------|--------|------------|
-| GET | `/orders` | Get all production orders |
-| GET | `/orders/{id}` | Get production order by ID |
-| POST | `/orders` | Create a new production order |
-| PATCH | `/orders/{id}/status` | Update production order status |
+| Method | Endpoint              | Description                    |
+| ------ | --------------------- | ------------------------------ |
+| GET    | `/orders`             | Get all production orders      |
+| GET    | `/orders/{id}`        | Get production order by ID     |
+| POST   | `/orders`             | Create a new production order  |
+| PATCH  | `/orders/{id}/status` | Update production order status |
 
 ---
 
@@ -49,6 +49,7 @@ After starting the application, Swagger UI is available at:
 http://localhost:3000/api
 
 Swagger provides:
+
 - Endpoint descriptions
 - DTO schemas
 - Example payloads
@@ -59,6 +60,7 @@ Swagger provides:
 ## ▶️ Getting Started
 
 ### 1. Install dependencies
+
 ```bash
 npm install
 2. Run database migrations
@@ -100,3 +102,4 @@ additional production modules
 👤 Author
 
 This project was created as a recruitment task and serves as a solid foundation for further development.
+```
