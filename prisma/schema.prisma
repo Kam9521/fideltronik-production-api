@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Order {
+  id          Int         @id @default(autoincrement())
+  orderNumber String
+  productName String
+  quantity    Int
+  status      OrderStatus @default(PLANNED)
+}
+
+enum OrderStatus {
+  PLANNED
+  IN_PROGRESS
+  DONE
+  CANCELED
+}
